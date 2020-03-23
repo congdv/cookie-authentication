@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-console": "off",
+    "comma-dangle": "off",
+    "react/jsx-filename-extension": "off"
+  },
+  "plugins": ["@typescript-eslint","react"],
+  "overrides": [
+    {
+        "files": ["*.js", "*.jsx"],
+        "rules": {
+            "@typescript-eslint/...": "off"
+        }
+    }
+]
+}
